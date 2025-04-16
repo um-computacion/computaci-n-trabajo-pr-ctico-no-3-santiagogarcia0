@@ -11,3 +11,13 @@ def ingrese_numero():
         raise NumeroDebeSerPositivo("El número debe ser positivo")
     
     return numero
+
+if __name__ == "__main__":
+    try:
+        numero = ingrese_numero()
+        print(f"Número válido: {numero}")
+    except ValueError:
+        print("Error: La entrada debe ser un número válido")
+    except NumeroDebeSerPositivo:
+        print("Error: El número debe ser positivo")
+
