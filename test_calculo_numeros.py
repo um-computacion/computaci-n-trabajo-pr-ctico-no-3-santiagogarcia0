@@ -1,16 +1,7 @@
 import unittest
 from unittest.mock import patch
-
-# Comentamos la importación que todavía no existe
-# from exceptions import ingrese_numero, NumeroDebeSerPositivo
-
-class NumeroDebeSerPositivo(Exception):
-    """Excepción temporal simulada para que el código sea ejecutable (luego se reemplaza)."""
-    pass
-
-def ingrese_numero():
-    """Función temporal vacía para que los tests fallen de forma controlada."""
-    pass
+from exceptions import NumeroDebeSerPositivo
+from calculo_numeros import ingrese_numero
 
 class TestCalculoNumeros(unittest.TestCase):
 
